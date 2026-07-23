@@ -1,0 +1,6 @@
+.secrets/
+uwp/PokedexUWP/bin/
+uwp/PokedexUWP/obj/
+*.user
+.vs/
+node_modules/

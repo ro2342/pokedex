@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pokedex Tracker</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#c050c0">
+<link rel="icon" href="icons/icon-192.png">
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app">
+  <div class="tbar">
+    <span class="tbar-t">POKEDEX TRACKER</span>
+    <div class="tbar-b">
+      <button class="tsync" id="syncbtn-header"><span class="dot"></span>sync</button>
+    </div>
+  </div>
+  <div class="hi">
+    <div class="logo">HOME<br><em>TRACKER</em></div>
+    <div class="pw">
+      <div class="pl">HOME LOADING... <span id="pct">0%</span></div>
+      <div class="pt"><div class="pf" id="gbar" style="width:0%"></div></div>
+    </div>
+    <div class="pills">
+      <div class="pill" id="s-total">- pokemon</div>
+      <div class="pill" id="s-home">0 no HOME</div>
+    </div>
+  </div>
+
+  <!-- CHIPS: filtro por pokedex oficial do jogo -->
+  <div class="fbar">
+    <span class="flbl">JOGOS:</span>
+    <div class="chip" id="chip-go" onclick="toggleChip('go')">
+      <div class="cdot" style="background:var(--c-go)"></div>Pokemon GO
+    </div>
+    <div class="chip" id="chip-bd" onclick="toggleChip('bd')">
+      <div class="cdot" style="background:var(--c-bd)"></div>Brilliant Diamond
+    </div>
+    <div class="chip" id="chip-arceus" onclick="toggleChip('arceus')">
+      <div class="cdot" style="background:var(--c-arceus)"></div>Legends: Arceus
+    </div>
+    <div class="chip" id="chip-za" onclick="toggleChip('za')">
+      <div class="cdot" style="background:var(--c-za)"></div>Legends: Z-A
+    </div>
+  </div>
+
+  <!-- TABS: meu save pessoal -->
+  <div class="tabs" id="tabs">
+    <div class="tab on" data-t="all" onclick="setTab('all')">TODOS</div>
+    <div class="tab" data-t="bd" onclick="setTab('bd')">MEU BD</div>
+    <div class="tab" data-t="home" onclick="setTab('home')">MEU HOME</div>
+    <div class="tab" data-t="arceus" onclick="setTab('arceus')">MEU ARCEUS</div>
+    <div class="tab" data-t="za" onclick="setTab('za')">MEU Z-A</div>
+    <div class="tab" data-t="go" onclick="setTab('go')">MEU GO</div>
+    <div class="tab" data-t="no" onclick="setTab('no')">NAO RASTR.</div>
+  </div>
+</div>
+
+<div class="tbar2">
+  <div class="sw"><input class="si" id="search" type="text" placeholder="buscar pokemon..."></div>
+  <button class="btn" id="bclear">limpar tudo</button>
+</div>
+
+<main>
+  <div class="slbl" id="slbl">TODOS OS POKEMON</div>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" style="display:none"><span>?</span>NENHUM ENCONTRADO...</div>
+</main>
+
+<!-- MODAL: detalhe do pokemon -->
+<div class="ov" id="ov">
+  <div class="modal">
+    <div class="mtb">
+      <span class="mtbt" id="m-title">-</span>
+      <button class="mx" id="mx">X</button>
+    </div>
+    <div class="mb">
+      <div class="ph">
+        <img class="himg" id="m-img" src="" alt="">
+        <div>
+          <div class="hnum" id="m-num"></div>
+          <div class="hname" id="m-name"></div>
+          <div class="htypes" id="m-types"></div>
+        </div>
+      </div>
+      <div class="sl">DISPONIVEL EM</div>
+      <div class="avchips" id="m-avail"></div>
+      <div class="sl">ONDE EU TENHO</div>
+      <div class="grows" id="m-rows"></div>
+      <div class="mwarn" id="m-warn" style="display:none"></div>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL: sync com Google -->
+<div class="ov" id="ov-sync">
+  <div class="modal">
+    <div class="mtb">
+      <span class="mtbt">SINCRONIZACAO</span>
+      <button class="mx" id="sync-mx">X</button>
+    </div>
+    <div class="syncbox" id="sync-body"></div>
+  </div>
+</div>
+
+<script src="js/data.js"></script>
+<script src="js/db.js"></script>
+<script src="js/config.js"></script>
+<script src="js/sync.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
