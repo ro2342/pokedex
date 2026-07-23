@@ -47,7 +47,7 @@ function updateLabel() {
 //  PokeAPI online artwork, then the small online sprite. Keeps the
 //  app fully usable offline for whatever's already downloaded.
 // ============================================================
-function localArt(id) { return `img/poke/${id}.png`; }
+function localArt(id) { return `img/poke/${id}.png`; } // resolved relative to www/index.html
 function onlineArt(id) { return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${id}.png`; }
 function onlineSprite(id) { return `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`; }
 
