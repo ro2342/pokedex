@@ -40,31 +40,37 @@ function loadGoogleScript() {
   });
 }
 
+// OAuth2 token client (not One Tap/`google.accounts.id`) - One Tap's
+// `.prompt()` is built to appear automatically on page load and can
+// silently no-op on a button click (browser heuristics/cooldown after
+// a dismissal). The token client always opens a real popup on the
+// user gesture that calls it, which is what a "Sign in" button needs.
 async function signIn() {
   await loadGoogleScript();
   return new Promise((resolve, reject) => {
-    google.accounts.id.initialize({
+    const client = google.accounts.oauth2.initTokenClient({
       client_id: GOOGLE_WEB_CLIENT_ID,
+      scope: 'openid email profile',
       callback: async (response) => {
+        if (response.error) {
+          reject(new Error('Google: ' + response.error));
+          return;
+        }
         try {
-          const result = await exchangeWithFirebase(response.credential);
+          const result = await exchangeWithFirebase(response.access_token, 'access_token');
           resolve(result);
         } catch (err) {
           reject(err);
         }
       },
     });
-    google.accounts.id.prompt((notification) => {
-      if (notification.isNotDisplayed() || notification.isSkippedMoment()) {
-        reject(new Error('Login cancelado ou bloqueado pelo navegador.'));
-      }
-    });
+    client.requestAccessToken();
   });
 }
 
-async function exchangeWithFirebase(idToken) {
+async function exchangeWithFirebase(token, tokenParamName) {
   const url = `https://identitytoolkit.googleapis.com/v1/accounts:signInWithIdp?key=${FIREBASE_CONFIG.apiKey}`;
-  const postBody = `id_token=${encodeURIComponent(idToken)}&providerId=google.com`;
+  const postBody = `${tokenParamName}=${encodeURIComponent(token)}&providerId=google.com`;
   const res = await fetch(url, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
