@@ -81,7 +81,9 @@
                                 <RowDefinition Height="Auto"/>
                             </Grid.RowDefinitions>
                             <Grid Height="94">
-                                <TextBlock Text="{x:Bind NumberLabel}" FontSize="10" Foreground="White" Background="#66000000" Padding="4,1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4"/>
+                                <Border Background="#66000000" CornerRadius="4" Padding="4,1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4">
+                                    <TextBlock Text="{x:Bind NumberLabel}" FontSize="10" Foreground="White"/>
+                                </Border>
                                 <TextBlock Text="{x:Bind TagsLabel}" FontSize="9" Foreground="#906090" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="4" TextAlignment="Right" TextWrapping="Wrap" Width="60"/>
                                 <Image Source="{x:Bind ImageSource}" Width="64" Height="64" Stretch="Uniform"/>
                             </Grid>
