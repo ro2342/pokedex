@@ -9,6 +9,38 @@ function onStateChanged() {
   render();
 }
 
+// When exactly one game is unambiguously "in focus" (a specific "MEU X"
+// tab, or exactly one JOGOS chip), tapping a card should just toggle
+// that game directly instead of opening the full modal - that's the
+// whole point of narrowing the view to one game first. Any other state
+// (TODOS, NAO RASTR., multiple chips) keeps the old open-modal behavior.
+function activeSingleGame() {
+  if (myTab !== 'all' && myTab !== 'no') return myTab;
+  if (activeChips.size === 1) return [...activeChips][0];
+  return null;
+}
+
+function regionalNumber(gid, pid) {
+  return REGIONAL_DEX[gid] && REGIONAL_DEX[gid][pid];
+}
+
+let toastTimer = null;
+function showToast(msg) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => el.classList.remove('show'), 1600);
+}
+
+function quickToggle(id, gid) {
+  const p = POKEMON.find(x => x.id === id);
+  const g = GAMES.find(x => x.id === gid);
+  const v = !has(id, gid);
+  setG(id, gid, v);
+  showToast((v ? '✓ ' : '✗ ') + p.n + ' - ' + g.name);
+}
+
 // ============================================================
 //  CHIP FILTER
 // ============================================================
@@ -83,6 +115,8 @@ function render() {
   if (!list.length) { grid.innerHTML = ''; empty.style.display = ''; updateStats(); return; }
   empty.style.display = 'none';
 
+  const singleGame = activeSingleGame();
+
   grid.innerHTML = list.map(p => {
     const availGames = CHIP_IDS.filter(gid => inDex(p.id, gid));
     const tags = availGames.map(gid => {
@@ -93,9 +127,14 @@ function render() {
     const ml = myLocs(p.id);
     const dotClr = ml.length === 0 ? '#e0d0e0' : ml.length > 1 ? '#d040a0' : (GAMES.find(g => g.id === ml[0].id)?.color || '#aaa');
 
-    return `<div class="card" onclick="openModal(${p.id})">
+    const regionalNum = singleGame ? regionalNumber(singleGame, p.id) : null;
+    const numLabel = regionalNum ? '#' + String(regionalNum).padStart(3, '0') : '#' + String(p.id).padStart(4, '0');
+    const onClick = singleGame ? `quickToggle(${p.id},'${singleGame}')` : `openModal(${p.id})`;
+    const quickOn = singleGame ? has(p.id, singleGame) : false;
+
+    return `<div class="card${singleGame && quickOn ? ' quick-on' : ''}" onclick="${onClick}">
       <div class="ctop">
-        <span class="cnum">#${String(p.id).padStart(4, '0')}</span>
+        <span class="cnum">${numLabel}</span>
         <div class="ctags">${tags}</div>
         <div class="cimgw">
           <img class="cimg" data-id="${p.id}" src="${localArt(p.id)}" alt="${p.n}" loading="lazy">

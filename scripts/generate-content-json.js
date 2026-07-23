@@ -9,7 +9,7 @@ const dataJsPath = path.join(__dirname, '..', 'www', 'js', 'data.js');
 const outPath = path.join(__dirname, '..', 'uwp', 'PokedexUWP', 'Data', 'content.json');
 
 const source = fs.readFileSync(dataJsPath, 'utf8') +
-  '\nthis.POKEMON = POKEMON; this.GAMES = GAMES; this.CHIP_IDS = CHIP_IDS;';
+  '\nthis.POKEMON = POKEMON; this.GAMES = GAMES; this.CHIP_IDS = CHIP_IDS; this.REGIONAL_DEX = REGIONAL_DEX;';
 const sandbox = {};
 vm.createContext(sandbox);
 vm.runInContext(source, sandbox);
@@ -30,6 +30,7 @@ const content = {
   pokemon: sandbox.POKEMON,
   games,
   chipIds: sandbox.CHIP_IDS,
+  regionalDex: sandbox.REGIONAL_DEX,
 };
 
 fs.mkdirSync(path.dirname(outPath), { recursive: true });

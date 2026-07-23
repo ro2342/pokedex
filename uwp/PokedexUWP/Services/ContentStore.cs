@@ -17,6 +17,11 @@ namespace PokedexUWP.Services
         public static List<GameConfig> Games { get; private set; } = new List<GameConfig>();
         public static List<string> ChipIds { get; private set; } = new List<string>();
 
+        // gameId -> (pokemonId -> numero regional). So cobre os jogos com
+        // Pokedex regional propria (bd/arceus/za) - fonte: PokeAPI, ver
+        // www/js/data.js REGIONAL_DEX pro comentario completo.
+        public static Dictionary<string, Dictionary<int, int>> RegionalDex { get; private set; } = new Dictionary<string, Dictionary<int, int>>();
+
         public static async Task LoadAsync()
         {
             StorageFile file = await StorageFile.GetFileFromApplicationUriAsync(new Uri("ms-appx:///Data/content.json"));
@@ -55,6 +60,22 @@ namespace PokedexUWP.Services
             }).ToList();
 
             ChipIds = root["chipIds"].GetArray().Select(v => v.GetString()).ToList();
+
+            RegionalDex = new Dictionary<string, Dictionary<int, int>>();
+            if (root.ContainsKey("regionalDex"))
+            {
+                JsonObject regionalRoot = root["regionalDex"].GetObject();
+                foreach (string gameId in regionalRoot.Keys)
+                {
+                    JsonObject perPokemon = regionalRoot[gameId].GetObject();
+                    Dictionary<int, int> map = new Dictionary<int, int>();
+                    foreach (string idStr in perPokemon.Keys)
+                    {
+                        map[int.Parse(idStr)] = (int)perPokemon[idStr].GetNumber();
+                    }
+                    RegionalDex[gameId] = map;
+                }
+            }
         }
 
         public static GameConfig GameById(string id) => Games.FirstOrDefault(g => g.Id == id);
@@ -64,6 +85,15 @@ namespace PokedexUWP.Services
             GameConfig g = GameById(gameId);
             if (g?.Dex == null) return true;
             return g.Dex.Contains(pokemonId);
+        }
+
+        public static int? RegionalNumber(string gameId, int pokemonId)
+        {
+            if (RegionalDex.TryGetValue(gameId, out Dictionary<int, int> map) && map.TryGetValue(pokemonId, out int num))
+            {
+                return num;
+            }
+            return null;
         }
     }
 }

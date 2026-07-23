@@ -97,5 +97,10 @@
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
+
+        <Border x:Name="ToastBorder" Grid.Row="4" Background="#2A1A3A" CornerRadius="20" Padding="18,9"
+                HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,16" Visibility="Collapsed">
+            <TextBlock x:Name="ToastText" Foreground="White" FontWeight="Bold" FontSize="13"/>
+        </Border>
     </Grid>
 </Page>

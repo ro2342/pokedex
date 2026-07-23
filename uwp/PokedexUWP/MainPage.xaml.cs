@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using System.Threading;
 using System.Threading.Tasks;
 using PokedexUWP.Models;
 using PokedexUWP.Services;
@@ -69,6 +70,49 @@ namespace PokedexUWP
             Render();
         }
 
+        // Quando exatamente um jogo esta "em foco" (uma aba MEU X especifica,
+        // ou exatamente um chip JOGOS marcado), tocar num card so alterna
+        // aquele jogo direto em vez de abrir o dialogo inteiro - e o motivo
+        // de restringir a visualizacao a um jogo primeiro.
+        private string ActiveSingleGame()
+        {
+            if (_myTab != "all" && _myTab != "no") return _myTab;
+            if (_activeChips.Count == 1) return _activeChips.First();
+            return null;
+        }
+
+        private CancellationTokenSource _toastCts;
+
+        private async void ShowToast(string message)
+        {
+            ToastText.Text = message;
+            ToastBorder.Visibility = Visibility.Visible;
+
+            _toastCts?.Cancel();
+            CancellationTokenSource cts = new CancellationTokenSource();
+            _toastCts = cts;
+            try
+            {
+                await Task.Delay(1600, cts.Token);
+                ToastBorder.Visibility = Visibility.Collapsed;
+            }
+            catch (TaskCanceledException)
+            {
+                // outro toast substituiu esse antes do tempo acabar
+            }
+        }
+
+        private async void QuickToggle(int pokemonId, string gameId)
+        {
+            PokemonInfo info = ContentStore.Pokemon.First(p => p.Id == pokemonId);
+            GameConfig game = ContentStore.GameById(gameId);
+            bool newValue = !LocalDataStore.Has(_store, pokemonId, gameId);
+            LocalDataStore.Set(_store, pokemonId, gameId, newValue);
+            await LocalDataStore.SaveAsync(_store);
+            ShowToast((newValue ? "✓ " : "✗ ") + info.Name + " - " + game.Name);
+            Render();
+        }
+
         private void SearchBox_TextChanged(object sender, TextChangedEventArgs e)
         {
             _searchQuery = SearchBox.Text.Trim().ToLowerInvariant();
@@ -109,6 +153,8 @@ namespace PokedexUWP
                 return true;
             });
 
+            string singleGame = ActiveSingleGame();
+
             _items.Clear();
             foreach (PokemonInfo p in list)
             {
@@ -131,11 +177,16 @@ namespace PokedexUWP
                     .Where(gid => ContentStore.InDex(p.Id, gid))
                     .Select(gid => ContentStore.GameById(gid)?.Label ?? gid));
 
+                int? regionalNum = singleGame != null ? ContentStore.RegionalNumber(singleGame, p.Id) : null;
+                string numberLabel = regionalNum.HasValue
+                    ? "#" + regionalNum.Value.ToString("D3")
+                    : "#" + p.Id.ToString("D4");
+
                 _items.Add(new PokemonCardVm
                 {
                     Id = p.Id,
                     Name = p.Name,
-                    NumberLabel = "#" + p.Id.ToString("D4"),
+                    NumberLabel = numberLabel,
                     TagsLabel = tags,
                     TypesLabel = string.Join(" / ", p.Types),
                     ImageSource = new BitmapImage(new Uri($"ms-appx:///Assets/Sprites/{p.Id}.png")),
@@ -155,6 +206,12 @@ namespace PokedexUWP
         private async void PokemonGrid_ItemClick(object sender, ItemClickEventArgs e)
         {
             PokemonCardVm card = (PokemonCardVm)e.ClickedItem;
+            string singleGame = ActiveSingleGame();
+            if (singleGame != null)
+            {
+                QuickToggle(card.Id, singleGame);
+                return;
+            }
             PokemonInfo info = ContentStore.Pokemon.First(p => p.Id == card.Id);
             await ShowDetailDialogAsync(info);
         }

@@ -129,6 +129,14 @@ main{padding:14px 16px}
 .empty{text-align:center;padding:50px 20px;color:#c090c0;font-family:'VT323',monospace;font-size:18px;letter-spacing:1px}
 .empty span{display:block;font-size:44px;margin-bottom:8px}
 
+/* card quick-toggle state (single game in focus) */
+.card.quick-on{border-color:#40a060;box-shadow:3px 3px 0 rgba(64,160,96,.3)}
+.card.quick-on .ctop{background:linear-gradient(180deg,#eafaf0,white)}
+
+/* TOAST */
+.toast{position:fixed;left:50%;bottom:24px;transform:translate(-50%,20px);background:#2a1a3a;color:#fff;padding:9px 18px;border-radius:20px;font-family:'Nunito',sans-serif;font-weight:800;font-size:13px;box-shadow:0 4px 14px rgba(0,0,0,.3);opacity:0;pointer-events:none;transition:opacity .18s,transform .18s;z-index:400;white-space:nowrap}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+
 @media(max-width:500px){
   .grid{grid-template-columns:repeat(auto-fill,minmax(108px,1fr));gap:7px}
   .cimgw,.cimg{width:64px;height:64px}
