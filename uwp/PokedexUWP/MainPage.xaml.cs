@@ -281,6 +281,8 @@ namespace PokedexUWP
                 Title = info.Name,
                 Content = new ScrollViewer { Content = body, MaxHeight = 480 },
                 CloseButtonText = "Fechar",
+                RequestedTheme = ElementTheme.Light,
+                Background = new SolidColorBrush(Color.FromArgb(255, 0xFE, 0xF9, 0xF0)),
             };
             await dialog.ShowAsync();
         }
@@ -372,6 +374,8 @@ namespace PokedexUWP
                 Title = "Atualizacoes",
                 Content = body,
                 CloseButtonText = "Fechar",
+                RequestedTheme = ElementTheme.Light,
+                Background = new SolidColorBrush(Color.FromArgb(255, 0xFE, 0xF9, 0xF0)),
             };
 
             UpdateCheckResult checkTask = null;
