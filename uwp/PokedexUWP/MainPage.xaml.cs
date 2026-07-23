@@ -161,7 +161,7 @@ namespace PokedexUWP
 
         private async Task ShowDetailDialogAsync(PokemonInfo info)
         {
-            StackPanel body = new StackPanel { Spacing = 8, Padding = new Thickness(4) };
+            StackPanel body = new StackPanel { Padding = new Thickness(4) };
 
             body.Children.Add(new Image
             {
