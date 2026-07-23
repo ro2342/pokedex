@@ -1,0 +1,99 @@
+<Page
+    x:Class="PokedexUWP.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PokedexUWP"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Grid Grid.Row="0" Background="#C050C0" Padding="12,8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Grid.Column="0">
+                <TextBlock Text="POKEDEX TRACKER" Foreground="White" FontSize="18" FontWeight="Bold"/>
+                <TextBlock x:Name="StatsText" Text="- pokemon - 0 no HOME" Foreground="White" Opacity="0.85" FontSize="12" Margin="0,2,0,0"/>
+                <ProgressBar x:Name="HomeProgress" Minimum="0" Maximum="100" Value="0" Width="180" HorizontalAlignment="Left" Margin="0,4,0,0"/>
+            </StackPanel>
+            <Button x:Name="SyncButton" Grid.Column="1" Content="Sync" Click="SyncButton_Click" VerticalAlignment="Center"/>
+        </Grid>
+
+        <!-- Chips: filtro por pokedex oficial do jogo -->
+        <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Padding="12,6,12,0">
+            <StackPanel Orientation="Horizontal" Spacing="6">
+                <TextBlock Text="JOGOS:" VerticalAlignment="Center" Margin="0,0,6,0"/>
+                <ToggleButton x:Name="ChipGo" Content="Pokemon GO" Click="Chip_Click" Tag="go"/>
+                <ToggleButton x:Name="ChipBd" Content="Brilliant Diamond" Click="Chip_Click" Tag="bd"/>
+                <ToggleButton x:Name="ChipArceus" Content="Legends: Arceus" Click="Chip_Click" Tag="arceus"/>
+                <ToggleButton x:Name="ChipZa" Content="Legends: Z-A" Click="Chip_Click" Tag="za"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Tabs: meu save pessoal -->
+        <ScrollViewer Grid.Row="2" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled" Padding="12,6,12,6">
+            <StackPanel x:Name="TabsPanel" Orientation="Horizontal" Spacing="4">
+                <ToggleButton x:Name="TabAll" Content="TODOS" Click="Tab_Click" Tag="all" IsChecked="True"/>
+                <ToggleButton x:Name="TabBd" Content="MEU BD" Click="Tab_Click" Tag="bd"/>
+                <ToggleButton x:Name="TabHome" Content="MEU HOME" Click="Tab_Click" Tag="home"/>
+                <ToggleButton x:Name="TabArceus" Content="MEU ARCEUS" Click="Tab_Click" Tag="arceus"/>
+                <ToggleButton x:Name="TabZa" Content="MEU Z-A" Click="Tab_Click" Tag="za"/>
+                <ToggleButton x:Name="TabGo" Content="MEU GO" Click="Tab_Click" Tag="go"/>
+                <ToggleButton x:Name="TabNo" Content="NAO RASTR." Click="Tab_Click" Tag="no"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Busca -->
+        <Grid Grid.Row="3" Padding="12,0,12,8">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="SearchBox" Grid.Column="0" PlaceholderText="buscar pokemon..." TextChanged="SearchBox_TextChanged"/>
+            <Button x:Name="ClearAllButton" Grid.Column="1" Content="Limpar tudo" Margin="8,0,0,0" Click="ClearAll_Click"/>
+        </Grid>
+
+        <!-- Grid de pokemon -->
+        <GridView x:Name="PokemonGrid" Grid.Row="4" Padding="8" SelectionMode="None" IsItemClickEnabled="True" ItemClick="PokemonGrid_ItemClick">
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsWrapGrid Orientation="Horizontal" ItemWidth="128" ItemHeight="150"/>
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="local:PokemonCardVm">
+                    <Border Width="120" Margin="4" Background="White" BorderBrush="#C8A0C8" BorderThickness="2" CornerRadius="10">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid Height="94">
+                                <TextBlock Text="{x:Bind NumberLabel}" FontSize="10" Foreground="White" Background="#66000000" Padding="4,1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4"/>
+                                <TextBlock Text="{x:Bind TagsLabel}" FontSize="9" Foreground="#906090" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="4" TextAlignment="Right" TextWrapping="Wrap" Width="60"/>
+                                <Image Source="{x:Bind ImageSource}" Width="64" Height="64" Stretch="Uniform"/>
+                            </Grid>
+                            <StackPanel Grid.Row="1" Padding="4" HorizontalAlignment="Center">
+                                <TextBlock Text="{x:Bind Name}" FontWeight="Bold" FontSize="11" HorizontalAlignment="Center" TextTrimming="CharacterEllipsis"/>
+                                <TextBlock Text="{x:Bind TypesLabel}" FontSize="9" Foreground="Gray" HorizontalAlignment="Center"/>
+                                <Ellipse Width="8" Height="8" Fill="{x:Bind DotBrush}" Margin="0,2,0,0"/>
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+    </Grid>
+</Page>

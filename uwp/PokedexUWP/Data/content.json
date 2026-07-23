@@ -1,0 +1,5875 @@
+{
+  "pokemon": [
+    {
+      "id": 1,
+      "n": "bulbasaur",
+      "t": [
+        "grass",
+        "poison"
+      ]
+    },
+    {
+      "id": 2,
+      "n": "ivysaur",
+      "t": [
+        "grass",
+        "poison"
+      ]
+    },
+    {
+      "id": 3,
+      "n": "venusaur",
+      "t": [
+        "grass",
+        "poison"
+      ]
+    },
+    {
+      "id": 4,
+      "n": "charmander",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 5,
+      "n": "charmeleon",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 6,
+      "n": "charizard",
+      "t": [
+        "fire",
+        "flying"
+      ]
+    },
+    {
+      "id": 7,
+      "n": "squirtle",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 8,
+      "n": "wartortle",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 9,
+      "n": "blastoise",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 10,
+      "n": "caterpie",
+      "t": [
+        "bug"
+      ]
+    },
+    {
+      "id": 11,
+      "n": "metapod",
+      "t": [
+        "bug"
+      ]
+    },
+    {
+      "id": 12,
+      "n": "butterfree",
+      "t": [
+        "bug",
+        "flying"
+      ]
+    },
+    {
+      "id": 13,
+      "n": "weedle",
+      "t": [
+        "bug",
+        "poison"
+      ]
+    },
+    {
+      "id": 14,
+      "n": "kakuna",
+      "t": [
+        "bug",
+        "poison"
+      ]
+    },
+    {
+      "id": 15,
+      "n": "beedrill",
+      "t": [
+        "bug",
+        "poison"
+      ]
+    },
+    {
+      "id": 16,
+      "n": "pidgey",
+      "t": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "id": 17,
+      "n": "pidgeotto",
+      "t": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "id": 18,
+      "n": "pidgeot",
+      "t": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "id": 19,
+      "n": "rattata",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 20,
+      "n": "raticate",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 21,
+      "n": "spearow",
+      "t": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "id": 22,
+      "n": "fearow",
+      "t": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "id": 23,
+      "n": "ekans",
+      "t": [
+        "poison"
+      ]
+    },
+    {
+      "id": 24,
+      "n": "arbok",
+      "t": [
+        "poison"
+      ]
+    },
+    {
+      "id": 25,
+      "n": "pikachu",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 26,
+      "n": "raichu",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 27,
+      "n": "sandshrew",
+      "t": [
+        "ground"
+      ]
+    },
+    {
+      "id": 28,
+      "n": "sandslash",
+      "t": [
+        "ground"
+      ]
+    },
+    {
+      "id": 29,
+      "n": "nidoran-f",
+      "t": [
+        "poison"
+      ]
+    },
+    {
+      "id": 31,
+      "n": "nidoqueen",
+      "t": [
+        "poison",
+        "ground"
+      ]
+    },
+    {
+      "id": 32,
+      "n": "nidoran-m",
+      "t": [
+        "poison"
+      ]
+    },
+    {
+      "id": 34,
+      "n": "nidoking",
+      "t": [
+        "poison",
+        "ground"
+      ]
+    },
+    {
+      "id": 35,
+      "n": "clefairy",
+      "t": [
+        "fairy"
+      ]
+    },
+    {
+      "id": 36,
+      "n": "clefable",
+      "t": [
+        "fairy"
+      ]
+    },
+    {
+      "id": 37,
+      "n": "vulpix",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 38,
+      "n": "ninetales",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 39,
+      "n": "jigglypuff",
+      "t": [
+        "normal",
+        "fairy"
+      ]
+    },
+    {
+      "id": 40,
+      "n": "wigglytuff",
+      "t": [
+        "normal",
+        "fairy"
+      ]
+    },
+    {
+      "id": 41,
+      "n": "zubat",
+      "t": [
+        "poison",
+        "flying"
+      ]
+    },
+    {
+      "id": 42,
+      "n": "golbat",
+      "t": [
+        "poison",
+        "flying"
+      ]
+    },
+    {
+      "id": 43,
+      "n": "oddish",
+      "t": [
+        "grass",
+        "poison"
+      ]
+    },
+    {
+      "id": 44,
+      "n": "gloom",
+      "t": [
+        "grass",
+        "poison"
+      ]
+    },
+    {
+      "id": 45,
+      "n": "vileplume",
+      "t": [
+        "grass",
+        "poison"
+      ]
+    },
+    {
+      "id": 50,
+      "n": "diglett",
+      "t": [
+        "ground"
+      ]
+    },
+    {
+      "id": 51,
+      "n": "dugtrio",
+      "t": [
+        "ground"
+      ]
+    },
+    {
+      "id": 52,
+      "n": "meowth",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 53,
+      "n": "persian",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 54,
+      "n": "psyduck",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 55,
+      "n": "golduck",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 56,
+      "n": "mankey",
+      "t": [
+        "fighting"
+      ]
+    },
+    {
+      "id": 57,
+      "n": "primeape",
+      "t": [
+        "fighting"
+      ]
+    },
+    {
+      "id": 58,
+      "n": "growlithe",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 59,
+      "n": "arcanine",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 60,
+      "n": "poliwag",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 61,
+      "n": "poliwhirl",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 62,
+      "n": "poliwrath",
+      "t": [
+        "water",
+        "fighting"
+      ]
+    },
+    {
+      "id": 63,
+      "n": "abra",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 64,
+      "n": "kadabra",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 65,
+      "n": "alakazam",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 66,
+      "n": "machop",
+      "t": [
+        "fighting"
+      ]
+    },
+    {
+      "id": 67,
+      "n": "machoke",
+      "t": [
+        "fighting"
+      ]
+    },
+    {
+      "id": 68,
+      "n": "machamp",
+      "t": [
+        "fighting"
+      ]
+    },
+    {
+      "id": 69,
+      "n": "bellsprout",
+      "t": [
+        "grass",
+        "poison"
+      ]
+    },
+    {
+      "id": 71,
+      "n": "victreebel",
+      "t": [
+        "grass",
+        "poison"
+      ]
+    },
+    {
+      "id": 72,
+      "n": "tentacool",
+      "t": [
+        "water",
+        "poison"
+      ]
+    },
+    {
+      "id": 73,
+      "n": "tentacruel",
+      "t": [
+        "water",
+        "poison"
+      ]
+    },
+    {
+      "id": 74,
+      "n": "geodude",
+      "t": [
+        "rock",
+        "ground"
+      ]
+    },
+    {
+      "id": 75,
+      "n": "graveler",
+      "t": [
+        "rock",
+        "ground"
+      ]
+    },
+    {
+      "id": 76,
+      "n": "golem",
+      "t": [
+        "rock",
+        "ground"
+      ]
+    },
+    {
+      "id": 77,
+      "n": "ponyta",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 78,
+      "n": "rapidash",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 79,
+      "n": "slowpoke",
+      "t": [
+        "water",
+        "psychic"
+      ]
+    },
+    {
+      "id": 80,
+      "n": "slowbro",
+      "t": [
+        "water",
+        "psychic"
+      ]
+    },
+    {
+      "id": 81,
+      "n": "magnemite",
+      "t": [
+        "electric",
+        "steel"
+      ]
+    },
+    {
+      "id": 82,
+      "n": "magneton",
+      "t": [
+        "electric",
+        "steel"
+      ]
+    },
+    {
+      "id": 86,
+      "n": "seel",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 87,
+      "n": "dewgong",
+      "t": [
+        "water",
+        "ice"
+      ]
+    },
+    {
+      "id": 88,
+      "n": "grimer",
+      "t": [
+        "poison"
+      ]
+    },
+    {
+      "id": 89,
+      "n": "muk",
+      "t": [
+        "poison"
+      ]
+    },
+    {
+      "id": 90,
+      "n": "shellder",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 91,
+      "n": "cloyster",
+      "t": [
+        "water",
+        "ice"
+      ]
+    },
+    {
+      "id": 92,
+      "n": "gastly",
+      "t": [
+        "ghost",
+        "poison"
+      ]
+    },
+    {
+      "id": 93,
+      "n": "haunter",
+      "t": [
+        "ghost",
+        "poison"
+      ]
+    },
+    {
+      "id": 94,
+      "n": "gengar",
+      "t": [
+        "ghost",
+        "poison"
+      ]
+    },
+    {
+      "id": 95,
+      "n": "onix",
+      "t": [
+        "rock",
+        "ground"
+      ]
+    },
+    {
+      "id": 98,
+      "n": "krabby",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 99,
+      "n": "kingler",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 100,
+      "n": "voltorb",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 101,
+      "n": "electrode",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 104,
+      "n": "cubone",
+      "t": [
+        "ground"
+      ]
+    },
+    {
+      "id": 105,
+      "n": "marowak",
+      "t": [
+        "ground"
+      ]
+    },
+    {
+      "id": 106,
+      "n": "hitmonlee",
+      "t": [
+        "fighting"
+      ]
+    },
+    {
+      "id": 107,
+      "n": "hitmonchan",
+      "t": [
+        "fighting"
+      ]
+    },
+    {
+      "id": 108,
+      "n": "lickitung",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 109,
+      "n": "koffing",
+      "t": [
+        "poison"
+      ]
+    },
+    {
+      "id": 110,
+      "n": "weezing",
+      "t": [
+        "poison"
+      ]
+    },
+    {
+      "id": 111,
+      "n": "rhyhorn",
+      "t": [
+        "ground",
+        "rock"
+      ]
+    },
+    {
+      "id": 112,
+      "n": "rhydon",
+      "t": [
+        "ground",
+        "rock"
+      ]
+    },
+    {
+      "id": 113,
+      "n": "chansey",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 114,
+      "n": "tangela",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 116,
+      "n": "horsea",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 117,
+      "n": "seadra",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 118,
+      "n": "goldeen",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 119,
+      "n": "seaking",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 120,
+      "n": "staryu",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 121,
+      "n": "starmie",
+      "t": [
+        "water",
+        "psychic"
+      ]
+    },
+    {
+      "id": 122,
+      "n": "mr-mime",
+      "t": [
+        "psychic",
+        "fairy"
+      ]
+    },
+    {
+      "id": 123,
+      "n": "scyther",
+      "t": [
+        "bug",
+        "flying"
+      ]
+    },
+    {
+      "id": 125,
+      "n": "electabuzz",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 126,
+      "n": "magmar",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 127,
+      "n": "pinsir",
+      "t": [
+        "bug"
+      ]
+    },
+    {
+      "id": 129,
+      "n": "magikarp",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 130,
+      "n": "gyarados",
+      "t": [
+        "water",
+        "flying"
+      ]
+    },
+    {
+      "id": 131,
+      "n": "lapras",
+      "t": [
+        "water",
+        "ice"
+      ]
+    },
+    {
+      "id": 132,
+      "n": "ditto",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 133,
+      "n": "eevee",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 134,
+      "n": "vaporeon",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 135,
+      "n": "jolteon",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 136,
+      "n": "flareon",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 137,
+      "n": "porygon",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 138,
+      "n": "omanyte",
+      "t": [
+        "rock",
+        "water"
+      ]
+    },
+    {
+      "id": 139,
+      "n": "omastar",
+      "t": [
+        "rock",
+        "water"
+      ]
+    },
+    {
+      "id": 140,
+      "n": "kabuto",
+      "t": [
+        "rock",
+        "water"
+      ]
+    },
+    {
+      "id": 141,
+      "n": "kabutops",
+      "t": [
+        "rock",
+        "water"
+      ]
+    },
+    {
+      "id": 142,
+      "n": "aerodactyl",
+      "t": [
+        "rock",
+        "flying"
+      ]
+    },
+    {
+      "id": 143,
+      "n": "snorlax",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 144,
+      "n": "articuno",
+      "t": [
+        "ice",
+        "flying"
+      ]
+    },
+    {
+      "id": 145,
+      "n": "zapdos",
+      "t": [
+        "electric",
+        "flying"
+      ]
+    },
+    {
+      "id": 146,
+      "n": "moltres",
+      "t": [
+        "fire",
+        "flying"
+      ]
+    },
+    {
+      "id": 147,
+      "n": "dratini",
+      "t": [
+        "dragon"
+      ]
+    },
+    {
+      "id": 148,
+      "n": "dragonair",
+      "t": [
+        "dragon"
+      ]
+    },
+    {
+      "id": 149,
+      "n": "dragonite",
+      "t": [
+        "dragon",
+        "flying"
+      ]
+    },
+    {
+      "id": 150,
+      "n": "mewtwo",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 151,
+      "n": "mew",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 152,
+      "n": "chikorita",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 153,
+      "n": "bayleef",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 154,
+      "n": "meganium",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 155,
+      "n": "cyndaquil",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 156,
+      "n": "quilava",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 157,
+      "n": "typhlosion",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 158,
+      "n": "totodile",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 159,
+      "n": "croconaw",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 160,
+      "n": "feraligatr",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 163,
+      "n": "hoothoot",
+      "t": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "id": 164,
+      "n": "noctowl",
+      "t": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "id": 165,
+      "n": "ledyba",
+      "t": [
+        "bug",
+        "flying"
+      ]
+    },
+    {
+      "id": 166,
+      "n": "ledian",
+      "t": [
+        "bug",
+        "flying"
+      ]
+    },
+    {
+      "id": 167,
+      "n": "spinarak",
+      "t": [
+        "bug",
+        "poison"
+      ]
+    },
+    {
+      "id": 168,
+      "n": "ariados",
+      "t": [
+        "bug",
+        "poison"
+      ]
+    },
+    {
+      "id": 169,
+      "n": "crobat",
+      "t": [
+        "poison",
+        "flying"
+      ]
+    },
+    {
+      "id": 172,
+      "n": "pichu",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 173,
+      "n": "cleffa",
+      "t": [
+        "fairy"
+      ]
+    },
+    {
+      "id": 174,
+      "n": "igglybuff",
+      "t": [
+        "normal",
+        "fairy"
+      ]
+    },
+    {
+      "id": 175,
+      "n": "togepi",
+      "t": [
+        "fairy"
+      ]
+    },
+    {
+      "id": 176,
+      "n": "togetic",
+      "t": [
+        "fairy",
+        "flying"
+      ]
+    },
+    {
+      "id": 179,
+      "n": "mareep",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 180,
+      "n": "flaaffy",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 181,
+      "n": "ampharos",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 183,
+      "n": "marill",
+      "t": [
+        "water",
+        "fairy"
+      ]
+    },
+    {
+      "id": 184,
+      "n": "azumarill",
+      "t": [
+        "water",
+        "fairy"
+      ]
+    },
+    {
+      "id": 185,
+      "n": "sudowoodo",
+      "t": [
+        "rock"
+      ]
+    },
+    {
+      "id": 190,
+      "n": "aipom",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 193,
+      "n": "yanma",
+      "t": [
+        "bug",
+        "flying"
+      ]
+    },
+    {
+      "id": 194,
+      "n": "wooper",
+      "t": [
+        "water",
+        "ground"
+      ]
+    },
+    {
+      "id": 195,
+      "n": "quagsire",
+      "t": [
+        "water",
+        "ground"
+      ]
+    },
+    {
+      "id": 196,
+      "n": "espeon",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 197,
+      "n": "umbreon",
+      "t": [
+        "dark"
+      ]
+    },
+    {
+      "id": 198,
+      "n": "murkrow",
+      "t": [
+        "dark",
+        "flying"
+      ]
+    },
+    {
+      "id": 200,
+      "n": "misdreavus",
+      "t": [
+        "ghost"
+      ]
+    },
+    {
+      "id": 204,
+      "n": "pineco",
+      "t": [
+        "bug"
+      ]
+    },
+    {
+      "id": 205,
+      "n": "forretress",
+      "t": [
+        "bug",
+        "steel"
+      ]
+    },
+    {
+      "id": 207,
+      "n": "gligar",
+      "t": [
+        "ground",
+        "flying"
+      ]
+    },
+    {
+      "id": 208,
+      "n": "steelix",
+      "t": [
+        "steel",
+        "ground"
+      ]
+    },
+    {
+      "id": 212,
+      "n": "scizor",
+      "t": [
+        "bug",
+        "steel"
+      ]
+    },
+    {
+      "id": 213,
+      "n": "shuckle",
+      "t": [
+        "bug",
+        "rock"
+      ]
+    },
+    {
+      "id": 214,
+      "n": "heracross",
+      "t": [
+        "bug",
+        "fighting"
+      ]
+    },
+    {
+      "id": 215,
+      "n": "sneasel",
+      "t": [
+        "dark",
+        "ice"
+      ]
+    },
+    {
+      "id": 216,
+      "n": "teddiursa",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 217,
+      "n": "ursaring",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 220,
+      "n": "swinub",
+      "t": [
+        "ice",
+        "ground"
+      ]
+    },
+    {
+      "id": 221,
+      "n": "piloswine",
+      "t": [
+        "ice",
+        "ground"
+      ]
+    },
+    {
+      "id": 223,
+      "n": "remoraid",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 224,
+      "n": "octillery",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 225,
+      "n": "delibird",
+      "t": [
+        "ice",
+        "flying"
+      ]
+    },
+    {
+      "id": 226,
+      "n": "mantine",
+      "t": [
+        "water",
+        "flying"
+      ]
+    },
+    {
+      "id": 228,
+      "n": "houndour",
+      "t": [
+        "dark",
+        "fire"
+      ]
+    },
+    {
+      "id": 229,
+      "n": "houndoom",
+      "t": [
+        "dark",
+        "fire"
+      ]
+    },
+    {
+      "id": 230,
+      "n": "kingdra",
+      "t": [
+        "water",
+        "dragon"
+      ]
+    },
+    {
+      "id": 231,
+      "n": "phanpy",
+      "t": [
+        "ground"
+      ]
+    },
+    {
+      "id": 232,
+      "n": "donphan",
+      "t": [
+        "ground"
+      ]
+    },
+    {
+      "id": 233,
+      "n": "porygon2",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 234,
+      "n": "stantler",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 239,
+      "n": "elekid",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 240,
+      "n": "magby",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 242,
+      "n": "blissey",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 243,
+      "n": "raikou",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 244,
+      "n": "entei",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 245,
+      "n": "suicune",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 246,
+      "n": "larvitar",
+      "t": [
+        "rock",
+        "ground"
+      ]
+    },
+    {
+      "id": 247,
+      "n": "pupitar",
+      "t": [
+        "rock",
+        "ground"
+      ]
+    },
+    {
+      "id": 248,
+      "n": "tyranitar",
+      "t": [
+        "rock",
+        "dark"
+      ]
+    },
+    {
+      "id": 249,
+      "n": "lugia",
+      "t": [
+        "psychic",
+        "flying"
+      ]
+    },
+    {
+      "id": 250,
+      "n": "ho-oh",
+      "t": [
+        "fire",
+        "flying"
+      ]
+    },
+    {
+      "id": 251,
+      "n": "celebi",
+      "t": [
+        "psychic",
+        "grass"
+      ]
+    },
+    {
+      "id": 252,
+      "n": "treecko",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 253,
+      "n": "grovyle",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 254,
+      "n": "sceptile",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 255,
+      "n": "torchic",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 256,
+      "n": "combusken",
+      "t": [
+        "fire",
+        "fighting"
+      ]
+    },
+    {
+      "id": 257,
+      "n": "blaziken",
+      "t": [
+        "fire",
+        "fighting"
+      ]
+    },
+    {
+      "id": 258,
+      "n": "mudkip",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 259,
+      "n": "marshtomp",
+      "t": [
+        "water",
+        "ground"
+      ]
+    },
+    {
+      "id": 260,
+      "n": "swampert",
+      "t": [
+        "water",
+        "ground"
+      ]
+    },
+    {
+      "id": 265,
+      "n": "wurmple",
+      "t": [
+        "bug"
+      ]
+    },
+    {
+      "id": 266,
+      "n": "silcoon",
+      "t": [
+        "bug"
+      ]
+    },
+    {
+      "id": 267,
+      "n": "beautifly",
+      "t": [
+        "bug",
+        "flying"
+      ]
+    },
+    {
+      "id": 268,
+      "n": "cascoon",
+      "t": [
+        "bug"
+      ]
+    },
+    {
+      "id": 269,
+      "n": "dustox",
+      "t": [
+        "bug",
+        "poison"
+      ]
+    },
+    {
+      "id": 270,
+      "n": "lotad",
+      "t": [
+        "water",
+        "grass"
+      ]
+    },
+    {
+      "id": 271,
+      "n": "lombre",
+      "t": [
+        "water",
+        "grass"
+      ]
+    },
+    {
+      "id": 272,
+      "n": "ludicolo",
+      "t": [
+        "water",
+        "grass"
+      ]
+    },
+    {
+      "id": 278,
+      "n": "wingull",
+      "t": [
+        "water",
+        "flying"
+      ]
+    },
+    {
+      "id": 279,
+      "n": "pelipper",
+      "t": [
+        "water",
+        "flying"
+      ]
+    },
+    {
+      "id": 280,
+      "n": "ralts",
+      "t": [
+        "psychic",
+        "fairy"
+      ]
+    },
+    {
+      "id": 281,
+      "n": "kirlia",
+      "t": [
+        "psychic",
+        "fairy"
+      ]
+    },
+    {
+      "id": 282,
+      "n": "gardevoir",
+      "t": [
+        "psychic",
+        "fairy"
+      ]
+    },
+    {
+      "id": 299,
+      "n": "nosepass",
+      "t": [
+        "rock"
+      ]
+    },
+    {
+      "id": 302,
+      "n": "sableye",
+      "t": [
+        "dark",
+        "ghost"
+      ]
+    },
+    {
+      "id": 303,
+      "n": "mawile",
+      "t": [
+        "steel",
+        "fairy"
+      ]
+    },
+    {
+      "id": 307,
+      "n": "meditite",
+      "t": [
+        "fighting",
+        "psychic"
+      ]
+    },
+    {
+      "id": 308,
+      "n": "medicham",
+      "t": [
+        "fighting",
+        "psychic"
+      ]
+    },
+    {
+      "id": 315,
+      "n": "roselia",
+      "t": [
+        "grass",
+        "poison"
+      ]
+    },
+    {
+      "id": 333,
+      "n": "swablu",
+      "t": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "id": 334,
+      "n": "altaria",
+      "t": [
+        "dragon",
+        "flying"
+      ]
+    },
+    {
+      "id": 339,
+      "n": "barboach",
+      "t": [
+        "water",
+        "ground"
+      ]
+    },
+    {
+      "id": 340,
+      "n": "whiscash",
+      "t": [
+        "water",
+        "ground"
+      ]
+    },
+    {
+      "id": 349,
+      "n": "feebas",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 350,
+      "n": "milotic",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 355,
+      "n": "duskull",
+      "t": [
+        "ghost"
+      ]
+    },
+    {
+      "id": 356,
+      "n": "dusclops",
+      "t": [
+        "ghost"
+      ]
+    },
+    {
+      "id": 358,
+      "n": "chimecho",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 359,
+      "n": "absol",
+      "t": [
+        "dark"
+      ]
+    },
+    {
+      "id": 361,
+      "n": "snorunt",
+      "t": [
+        "ice"
+      ]
+    },
+    {
+      "id": 362,
+      "n": "glalie",
+      "t": [
+        "ice"
+      ]
+    },
+    {
+      "id": 363,
+      "n": "spheal",
+      "t": [
+        "ice",
+        "water"
+      ]
+    },
+    {
+      "id": 364,
+      "n": "sealeo",
+      "t": [
+        "ice",
+        "water"
+      ]
+    },
+    {
+      "id": 365,
+      "n": "walrein",
+      "t": [
+        "ice",
+        "water"
+      ]
+    },
+    {
+      "id": 371,
+      "n": "bagon",
+      "t": [
+        "dragon"
+      ]
+    },
+    {
+      "id": 372,
+      "n": "shelgon",
+      "t": [
+        "dragon"
+      ]
+    },
+    {
+      "id": 373,
+      "n": "salamence",
+      "t": [
+        "dragon",
+        "flying"
+      ]
+    },
+    {
+      "id": 374,
+      "n": "beldum",
+      "t": [
+        "steel",
+        "psychic"
+      ]
+    },
+    {
+      "id": 375,
+      "n": "metang",
+      "t": [
+        "steel",
+        "psychic"
+      ]
+    },
+    {
+      "id": 376,
+      "n": "metagross",
+      "t": [
+        "steel",
+        "psychic"
+      ]
+    },
+    {
+      "id": 377,
+      "n": "regirock",
+      "t": [
+        "rock"
+      ]
+    },
+    {
+      "id": 378,
+      "n": "regice",
+      "t": [
+        "ice"
+      ]
+    },
+    {
+      "id": 379,
+      "n": "registeel",
+      "t": [
+        "steel"
+      ]
+    },
+    {
+      "id": 380,
+      "n": "latias",
+      "t": [
+        "dragon",
+        "psychic"
+      ]
+    },
+    {
+      "id": 381,
+      "n": "latios",
+      "t": [
+        "dragon",
+        "psychic"
+      ]
+    },
+    {
+      "id": 382,
+      "n": "kyogre",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 383,
+      "n": "groudon",
+      "t": [
+        "ground"
+      ]
+    },
+    {
+      "id": 384,
+      "n": "rayquaza",
+      "t": [
+        "dragon",
+        "flying"
+      ]
+    },
+    {
+      "id": 385,
+      "n": "jirachi",
+      "t": [
+        "steel",
+        "psychic"
+      ]
+    },
+    {
+      "id": 386,
+      "n": "deoxys",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 387,
+      "n": "turtwig",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 388,
+      "n": "grotle",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 389,
+      "n": "torterra",
+      "t": [
+        "grass",
+        "ground"
+      ]
+    },
+    {
+      "id": 390,
+      "n": "chimchar",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 391,
+      "n": "monferno",
+      "t": [
+        "fire",
+        "fighting"
+      ]
+    },
+    {
+      "id": 392,
+      "n": "infernape",
+      "t": [
+        "fire",
+        "fighting"
+      ]
+    },
+    {
+      "id": 393,
+      "n": "piplup",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 394,
+      "n": "prinplup",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 395,
+      "n": "empoleon",
+      "t": [
+        "water",
+        "steel"
+      ]
+    },
+    {
+      "id": 396,
+      "n": "starly",
+      "t": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "id": 397,
+      "n": "staravia",
+      "t": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "id": 398,
+      "n": "staraptor",
+      "t": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "id": 399,
+      "n": "bidoof",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 400,
+      "n": "bibarel",
+      "t": [
+        "normal",
+        "water"
+      ]
+    },
+    {
+      "id": 401,
+      "n": "kricketot",
+      "t": [
+        "bug"
+      ]
+    },
+    {
+      "id": 402,
+      "n": "kricketune",
+      "t": [
+        "bug"
+      ]
+    },
+    {
+      "id": 403,
+      "n": "shinx",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 404,
+      "n": "luxio",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 405,
+      "n": "luxray",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 406,
+      "n": "budew",
+      "t": [
+        "grass",
+        "poison"
+      ]
+    },
+    {
+      "id": 407,
+      "n": "roserade",
+      "t": [
+        "grass",
+        "poison"
+      ]
+    },
+    {
+      "id": 408,
+      "n": "cranidos",
+      "t": [
+        "rock"
+      ]
+    },
+    {
+      "id": 409,
+      "n": "rampardos",
+      "t": [
+        "rock"
+      ]
+    },
+    {
+      "id": 410,
+      "n": "shieldon",
+      "t": [
+        "rock",
+        "steel"
+      ]
+    },
+    {
+      "id": 411,
+      "n": "bastiodon",
+      "t": [
+        "rock",
+        "steel"
+      ]
+    },
+    {
+      "id": 412,
+      "n": "burmy",
+      "t": [
+        "bug"
+      ]
+    },
+    {
+      "id": 413,
+      "n": "wormadam",
+      "t": [
+        "bug",
+        "grass"
+      ]
+    },
+    {
+      "id": 414,
+      "n": "mothim",
+      "t": [
+        "bug",
+        "flying"
+      ]
+    },
+    {
+      "id": 415,
+      "n": "combee",
+      "t": [
+        "bug",
+        "flying"
+      ]
+    },
+    {
+      "id": 416,
+      "n": "vespiquen",
+      "t": [
+        "bug",
+        "flying"
+      ]
+    },
+    {
+      "id": 417,
+      "n": "pachirisu",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 418,
+      "n": "buizel",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 419,
+      "n": "floatzel",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 420,
+      "n": "cherubi",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 421,
+      "n": "cherrim",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 422,
+      "n": "shellos",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 423,
+      "n": "gastrodon",
+      "t": [
+        "water",
+        "ground"
+      ]
+    },
+    {
+      "id": 424,
+      "n": "ambipom",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 425,
+      "n": "drifloon",
+      "t": [
+        "ghost",
+        "flying"
+      ]
+    },
+    {
+      "id": 426,
+      "n": "drifblim",
+      "t": [
+        "ghost",
+        "flying"
+      ]
+    },
+    {
+      "id": 427,
+      "n": "buneary",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 428,
+      "n": "lopunny",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 429,
+      "n": "mismagius",
+      "t": [
+        "ghost"
+      ]
+    },
+    {
+      "id": 430,
+      "n": "honchkrow",
+      "t": [
+        "dark",
+        "flying"
+      ]
+    },
+    {
+      "id": 431,
+      "n": "glameow",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 432,
+      "n": "purugly",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 433,
+      "n": "chingling",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 434,
+      "n": "stunky",
+      "t": [
+        "poison",
+        "dark"
+      ]
+    },
+    {
+      "id": 435,
+      "n": "skuntank",
+      "t": [
+        "poison",
+        "dark"
+      ]
+    },
+    {
+      "id": 436,
+      "n": "bronzor",
+      "t": [
+        "steel",
+        "psychic"
+      ]
+    },
+    {
+      "id": 437,
+      "n": "bronzong",
+      "t": [
+        "steel",
+        "psychic"
+      ]
+    },
+    {
+      "id": 438,
+      "n": "bonsly",
+      "t": [
+        "rock"
+      ]
+    },
+    {
+      "id": 439,
+      "n": "mime-jr",
+      "t": [
+        "psychic",
+        "fairy"
+      ]
+    },
+    {
+      "id": 440,
+      "n": "happiny",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 441,
+      "n": "chatot",
+      "t": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "id": 442,
+      "n": "spiritomb",
+      "t": [
+        "ghost",
+        "dark"
+      ]
+    },
+    {
+      "id": 443,
+      "n": "gible",
+      "t": [
+        "dragon",
+        "ground"
+      ]
+    },
+    {
+      "id": 444,
+      "n": "gabite",
+      "t": [
+        "dragon",
+        "ground"
+      ]
+    },
+    {
+      "id": 445,
+      "n": "garchomp",
+      "t": [
+        "dragon",
+        "ground"
+      ]
+    },
+    {
+      "id": 446,
+      "n": "munchlax",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 447,
+      "n": "riolu",
+      "t": [
+        "fighting"
+      ]
+    },
+    {
+      "id": 448,
+      "n": "lucario",
+      "t": [
+        "fighting",
+        "steel"
+      ]
+    },
+    {
+      "id": 449,
+      "n": "hippopotas",
+      "t": [
+        "ground"
+      ]
+    },
+    {
+      "id": 450,
+      "n": "hippowdon",
+      "t": [
+        "ground"
+      ]
+    },
+    {
+      "id": 451,
+      "n": "skorupi",
+      "t": [
+        "poison",
+        "bug"
+      ]
+    },
+    {
+      "id": 452,
+      "n": "drapion",
+      "t": [
+        "poison",
+        "dark"
+      ]
+    },
+    {
+      "id": 453,
+      "n": "croagunk",
+      "t": [
+        "poison",
+        "fighting"
+      ]
+    },
+    {
+      "id": 454,
+      "n": "toxicroak",
+      "t": [
+        "poison",
+        "fighting"
+      ]
+    },
+    {
+      "id": 455,
+      "n": "carnivine",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 456,
+      "n": "finneon",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 457,
+      "n": "lumineon",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 458,
+      "n": "mantyke",
+      "t": [
+        "water",
+        "flying"
+      ]
+    },
+    {
+      "id": 459,
+      "n": "snover",
+      "t": [
+        "grass",
+        "ice"
+      ]
+    },
+    {
+      "id": 460,
+      "n": "abomasnow",
+      "t": [
+        "grass",
+        "ice"
+      ]
+    },
+    {
+      "id": 461,
+      "n": "weavile",
+      "t": [
+        "dark",
+        "ice"
+      ]
+    },
+    {
+      "id": 462,
+      "n": "magnezone",
+      "t": [
+        "electric",
+        "steel"
+      ]
+    },
+    {
+      "id": 463,
+      "n": "lickilicky",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 464,
+      "n": "rhyperior",
+      "t": [
+        "ground",
+        "rock"
+      ]
+    },
+    {
+      "id": 465,
+      "n": "tangrowth",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 466,
+      "n": "electivire",
+      "t": [
+        "electric"
+      ]
+    },
+    {
+      "id": 467,
+      "n": "magmortar",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 468,
+      "n": "togekiss",
+      "t": [
+        "fairy",
+        "flying"
+      ]
+    },
+    {
+      "id": 469,
+      "n": "yanmega",
+      "t": [
+        "bug",
+        "flying"
+      ]
+    },
+    {
+      "id": 470,
+      "n": "leafeon",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 471,
+      "n": "glaceon",
+      "t": [
+        "ice"
+      ]
+    },
+    {
+      "id": 472,
+      "n": "gliscor",
+      "t": [
+        "ground",
+        "flying"
+      ]
+    },
+    {
+      "id": 473,
+      "n": "mamoswine",
+      "t": [
+        "ice",
+        "ground"
+      ]
+    },
+    {
+      "id": 474,
+      "n": "porygon-z",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 475,
+      "n": "gallade",
+      "t": [
+        "psychic",
+        "fighting"
+      ]
+    },
+    {
+      "id": 476,
+      "n": "probopass",
+      "t": [
+        "rock",
+        "steel"
+      ]
+    },
+    {
+      "id": 477,
+      "n": "dusknoir",
+      "t": [
+        "ghost"
+      ]
+    },
+    {
+      "id": 478,
+      "n": "froslass",
+      "t": [
+        "ice",
+        "ghost"
+      ]
+    },
+    {
+      "id": 479,
+      "n": "rotom",
+      "t": [
+        "electric",
+        "ghost"
+      ]
+    },
+    {
+      "id": 480,
+      "n": "uxie",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 481,
+      "n": "mesprit",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 482,
+      "n": "azelf",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 483,
+      "n": "dialga",
+      "t": [
+        "steel",
+        "dragon"
+      ]
+    },
+    {
+      "id": 484,
+      "n": "palkia",
+      "t": [
+        "water",
+        "dragon"
+      ]
+    },
+    {
+      "id": 485,
+      "n": "heatran",
+      "t": [
+        "fire",
+        "steel"
+      ]
+    },
+    {
+      "id": 486,
+      "n": "regigigas",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 487,
+      "n": "giratina",
+      "t": [
+        "ghost",
+        "dragon"
+      ]
+    },
+    {
+      "id": 488,
+      "n": "cresselia",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 489,
+      "n": "phione",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 490,
+      "n": "manaphy",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 491,
+      "n": "darkrai",
+      "t": [
+        "dark"
+      ]
+    },
+    {
+      "id": 492,
+      "n": "shaymin",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 493,
+      "n": "arceus",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 501,
+      "n": "oshawott",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 502,
+      "n": "dewott",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 503,
+      "n": "samurott",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 506,
+      "n": "lillipup",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 507,
+      "n": "herdier",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 508,
+      "n": "stoutland",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 529,
+      "n": "drilbur",
+      "t": [
+        "ground"
+      ]
+    },
+    {
+      "id": 530,
+      "n": "excadrill",
+      "t": [
+        "ground",
+        "steel"
+      ]
+    },
+    {
+      "id": 546,
+      "n": "cottonee",
+      "t": [
+        "grass",
+        "fairy"
+      ]
+    },
+    {
+      "id": 547,
+      "n": "whimsicott",
+      "t": [
+        "grass",
+        "fairy"
+      ]
+    },
+    {
+      "id": 550,
+      "n": "basculin",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 570,
+      "n": "zorua",
+      "t": [
+        "dark"
+      ]
+    },
+    {
+      "id": 571,
+      "n": "zoroark",
+      "t": [
+        "dark"
+      ]
+    },
+    {
+      "id": 572,
+      "n": "minccino",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 573,
+      "n": "cinccino",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 582,
+      "n": "vanillite",
+      "t": [
+        "ice"
+      ]
+    },
+    {
+      "id": 583,
+      "n": "vanillish",
+      "t": [
+        "ice"
+      ]
+    },
+    {
+      "id": 584,
+      "n": "vanilluxe",
+      "t": [
+        "ice"
+      ]
+    },
+    {
+      "id": 594,
+      "n": "alomomola",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 610,
+      "n": "axew",
+      "t": [
+        "dragon"
+      ]
+    },
+    {
+      "id": 611,
+      "n": "fraxure",
+      "t": [
+        "dragon"
+      ]
+    },
+    {
+      "id": 612,
+      "n": "haxorus",
+      "t": [
+        "dragon"
+      ]
+    },
+    {
+      "id": 619,
+      "n": "mienfoo",
+      "t": [
+        "fighting"
+      ]
+    },
+    {
+      "id": 620,
+      "n": "mienshao",
+      "t": [
+        "fighting"
+      ]
+    },
+    {
+      "id": 621,
+      "n": "druddigon",
+      "t": [
+        "dragon"
+      ]
+    },
+    {
+      "id": 633,
+      "n": "deino",
+      "t": [
+        "dark",
+        "dragon"
+      ]
+    },
+    {
+      "id": 634,
+      "n": "zweilous",
+      "t": [
+        "dark",
+        "dragon"
+      ]
+    },
+    {
+      "id": 635,
+      "n": "hydreigon",
+      "t": [
+        "dark",
+        "dragon"
+      ]
+    },
+    {
+      "id": 641,
+      "n": "tornadus",
+      "t": [
+        "flying"
+      ]
+    },
+    {
+      "id": 642,
+      "n": "thundurus",
+      "t": [
+        "electric",
+        "flying"
+      ]
+    },
+    {
+      "id": 645,
+      "n": "landorus",
+      "t": [
+        "ground",
+        "flying"
+      ]
+    },
+    {
+      "id": 646,
+      "n": "kyurem",
+      "t": [
+        "dragon",
+        "ice"
+      ]
+    },
+    {
+      "id": 650,
+      "n": "chespin",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 651,
+      "n": "quilladin",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 652,
+      "n": "chesnaught",
+      "t": [
+        "grass",
+        "fighting"
+      ]
+    },
+    {
+      "id": 653,
+      "n": "fennekin",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 654,
+      "n": "braixen",
+      "t": [
+        "fire"
+      ]
+    },
+    {
+      "id": 655,
+      "n": "delphox",
+      "t": [
+        "fire",
+        "psychic"
+      ]
+    },
+    {
+      "id": 656,
+      "n": "froakie",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 657,
+      "n": "frogadier",
+      "t": [
+        "water"
+      ]
+    },
+    {
+      "id": 658,
+      "n": "greninja",
+      "t": [
+        "water",
+        "dark"
+      ]
+    },
+    {
+      "id": 659,
+      "n": "bunnelby",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 660,
+      "n": "diggersby",
+      "t": [
+        "normal",
+        "ground"
+      ]
+    },
+    {
+      "id": 661,
+      "n": "fletchling",
+      "t": [
+        "normal",
+        "flying"
+      ]
+    },
+    {
+      "id": 662,
+      "n": "fletchinder",
+      "t": [
+        "fire",
+        "flying"
+      ]
+    },
+    {
+      "id": 663,
+      "n": "talonflame",
+      "t": [
+        "fire",
+        "flying"
+      ]
+    },
+    {
+      "id": 667,
+      "n": "litleo",
+      "t": [
+        "fire",
+        "normal"
+      ]
+    },
+    {
+      "id": 668,
+      "n": "pyroar",
+      "t": [
+        "fire",
+        "normal"
+      ]
+    },
+    {
+      "id": 669,
+      "n": "flabebe",
+      "t": [
+        "fairy"
+      ]
+    },
+    {
+      "id": 670,
+      "n": "floette",
+      "t": [
+        "fairy"
+      ]
+    },
+    {
+      "id": 671,
+      "n": "florges",
+      "t": [
+        "fairy"
+      ]
+    },
+    {
+      "id": 672,
+      "n": "skiddo",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 673,
+      "n": "gogoat",
+      "t": [
+        "grass"
+      ]
+    },
+    {
+      "id": 674,
+      "n": "pancham",
+      "t": [
+        "fighting"
+      ]
+    },
+    {
+      "id": 675,
+      "n": "pangoro",
+      "t": [
+        "fighting",
+        "dark"
+      ]
+    },
+    {
+      "id": 676,
+      "n": "furfrou",
+      "t": [
+        "normal"
+      ]
+    },
+    {
+      "id": 677,
+      "n": "espurr",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 678,
+      "n": "meowstic",
+      "t": [
+        "psychic"
+      ]
+    },
+    {
+      "id": 679,
+      "n": "honedge",
+      "t": [
+        "steel",
+        "ghost"
+      ]
+    },
+    {
+      "id": 680,
+      "n": "doublade",
+      "t": [
+        "steel",
+        "ghost"
+      ]
+    },
+    {
+      "id": 681,
+      "n": "aegislash",
+      "t": [
+        "steel",
+        "ghost"
+      ]
+    },
+    {
+      "id": 682,
+      "n": "spritzee",
+      "t": [
+        "fairy"
+      ]
+    },
+    {
+      "id": 683,
+      "n": "aromatisse",
+      "t": [
+        "fairy"
+      ]
+    },
+    {
+      "id": 684,
+      "n": "swirlix",
+      "t": [
+        "fairy"
+      ]
+    },
+    {
+      "id": 685,
+      "n": "slurpuff",
+      "t": [
+        "fairy"
+      ]
+    },
+    {
+      "id": 686,
+      "n": "inkay",
+      "t": [
+        "dark",
+        "psychic"
+      ]
+    },
+    {
+      "id": 687,
+      "n": "malamar",
+      "t": [
+        "dark",
+        "psychic"
+      ]
+    },
+    {
+      "id": 688,
+      "n": "binacle",
+      "t": [
+        "rock",
+        "water"
+      ]
+    },
+    {
+      "id": 689,
+      "n": "barbaracle",
+      "t": [
+        "rock",
+        "water"
+      ]
+    },
+    {
+      "id": 696,
+      "n": "tyrunt",
+      "t": [
+        "rock",
+        "dragon"
+      ]
+    },
+    {
+      "id": 697,
+      "n": "tyrantrum",
+      "t": [
+        "rock",
+        "dragon"
+      ]
+    },
+    {
+      "id": 698,
+      "n": "amaura",
+      "t": [
+        "rock",
+        "ice"
+      ]
+    },
+    {
+      "id": 699,
+      "n": "aurorus",
+      "t": [
+        "rock",
+        "ice"
+      ]
+    },
+    {
+      "id": 700,
+      "n": "sylveon",
+      "t": [
+        "fairy"
+      ]
+    },
+    {
+      "id": 701,
+      "n": "hawlucha",
+      "t": [
+        "fighting",
+        "flying"
+      ]
+    },
+    {
+      "id": 702,
+      "n": "dedenne",
+      "t": [
+        "electric",
+        "fairy"
+      ]
+    },
+    {
+      "id": 704,
+      "n": "goomy",
+      "t": [
+        "dragon"
+      ]
+    },
+    {
+      "id": 705,
+      "n": "sliggoo",
+      "t": [
+        "dragon"
+      ]
+    },
+    {
+      "id": 706,
+      "n": "goodra",
+      "t": [
+        "dragon"
+      ]
+    },
+    {
+      "id": 707,
+      "n": "klefki",
+      "t": [
+        "steel",
+        "fairy"
+      ]
+    },
+    {
+      "id": 708,
+      "n": "phantump",
+      "t": [
+        "ghost",
+        "grass"
+      ]
+    },
+    {
+      "id": 709,
+      "n": "trevenant",
+      "t": [
+        "ghost",
+        "grass"
+      ]
+    },
+    {
+      "id": 710,
+      "n": "pumpkaboo",
+      "t": [
+        "ghost",
+        "grass"
+      ]
+    },
+    {
+      "id": 711,
+      "n": "gourgeist",
+      "t": [
+        "ghost",
+        "grass"
+      ]
+    },
+    {
+      "id": 712,
+      "n": "bergmite",
+      "t": [
+        "ice"
+      ]
+    },
+    {
+      "id": 713,
+      "n": "avalugg",
+      "t": [
+        "ice"
+      ]
+    },
+    {
+      "id": 714,
+      "n": "noibat",
+      "t": [
+        "flying",
+        "dragon"
+      ]
+    },
+    {
+      "id": 715,
+      "n": "noivern",
+      "t": [
+        "flying",
+        "dragon"
+      ]
+    },
+    {
+      "id": 716,
+      "n": "xerneas",
+      "t": [
+        "fairy"
+      ]
+    },
+    {
+      "id": 717,
+      "n": "yveltal",
+      "t": [
+        "dark",
+        "flying"
+      ]
+    },
+    {
+      "id": 718,
+      "n": "zygarde",
+      "t": [
+        "dragon",
+        "ground"
+      ]
+    },
+    {
+      "id": 719,
+      "n": "diancie",
+      "t": [
+        "rock",
+        "fairy"
+      ]
+    },
+    {
+      "id": 720,
+      "n": "hoopa",
+      "t": [
+        "psychic",
+        "ghost"
+      ]
+    },
+    {
+      "id": 721,
+      "n": "volcanion",
+      "t": [
+        "fire",
+        "water"
+      ]
+    },
+    {
+      "id": 722,
+      "n": "rowlet",
+      "t": [
+        "grass",
+        "flying"
+      ]
+    },
+    {
+      "id": 723,
+      "n": "dartrix",
+      "t": [
+        "grass",
+        "flying"
+      ]
+    },
+    {
+      "id": 724,
+      "n": "decidueye",
+      "t": [
+        "grass",
+        "ghost"
+      ]
+    }
+  ],
+  "games": [
+    {
+      "id": "go",
+      "name": "Pokemon GO",
+      "sub": "so envia -> HOME",
+      "color": "#a8b800",
+      "label": "GO",
+      "oneway": false,
+      "dex": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583,
+        584,
+        585,
+        586,
+        587,
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612,
+        613,
+        614,
+        615,
+        616,
+        617,
+        618,
+        619,
+        620,
+        621,
+        622,
+        623,
+        624,
+        625,
+        626,
+        627,
+        628,
+        629,
+        630,
+        631,
+        632,
+        633,
+        634,
+        635,
+        636,
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643,
+        644,
+        645,
+        646,
+        647,
+        648,
+        649,
+        650,
+        651,
+        652,
+        653,
+        654,
+        655,
+        656,
+        657,
+        658,
+        659,
+        660,
+        661,
+        662,
+        663,
+        664,
+        665,
+        666,
+        667,
+        668,
+        669,
+        670,
+        671,
+        672,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        681,
+        682,
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698,
+        699,
+        700,
+        701,
+        702,
+        703,
+        704,
+        705,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712,
+        713,
+        714,
+        715,
+        716,
+        717,
+        718,
+        719,
+        720,
+        721,
+        722,
+        723,
+        724,
+        725,
+        726,
+        727,
+        728,
+        729,
+        730,
+        731,
+        732,
+        733,
+        734,
+        735,
+        736,
+        737,
+        738,
+        739,
+        740,
+        741,
+        742,
+        743,
+        744,
+        745,
+        746,
+        747,
+        748,
+        749,
+        750,
+        751,
+        752,
+        753,
+        754,
+        755,
+        756,
+        757,
+        758,
+        759,
+        760,
+        761,
+        762,
+        763,
+        764,
+        765,
+        766,
+        767,
+        768,
+        769,
+        770,
+        771,
+        772,
+        773,
+        774,
+        775,
+        776,
+        777,
+        778,
+        779,
+        780,
+        781,
+        782,
+        783,
+        784,
+        785,
+        786,
+        787,
+        788,
+        789,
+        790,
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        801,
+        802,
+        803,
+        804,
+        805,
+        806,
+        807,
+        808,
+        809,
+        810,
+        811,
+        812,
+        813,
+        814,
+        815,
+        816,
+        817,
+        818,
+        819,
+        820,
+        821,
+        822,
+        823,
+        824,
+        825,
+        826,
+        827,
+        828,
+        829,
+        830,
+        831,
+        832,
+        833,
+        834,
+        835,
+        836,
+        837,
+        838,
+        839,
+        840,
+        841,
+        842,
+        843,
+        844,
+        845,
+        846,
+        847,
+        848,
+        849,
+        850,
+        851,
+        852,
+        853,
+        854,
+        855,
+        856,
+        857,
+        858,
+        859,
+        860,
+        861,
+        862,
+        863,
+        864,
+        865,
+        866,
+        867,
+        868,
+        869,
+        870,
+        871,
+        872,
+        873,
+        874,
+        875,
+        876,
+        877,
+        878,
+        879,
+        880,
+        881,
+        882,
+        883,
+        884,
+        885,
+        886,
+        887,
+        888,
+        889,
+        890,
+        891,
+        892,
+        893,
+        894,
+        895,
+        896,
+        897,
+        898
+      ]
+    },
+    {
+      "id": "bd",
+      "name": "Brilliant Diamond",
+      "sub": "cartridge / save",
+      "color": "#4070e0",
+      "label": "BD",
+      "oneway": false,
+      "dex": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493
+      ]
+    },
+    {
+      "id": "home",
+      "name": "Pokemon HOME",
+      "sub": "salvo na nuvem",
+      "color": "#d040a0",
+      "label": "HOME",
+      "oneway": false,
+      "dex": null
+    },
+    {
+      "id": "arceus",
+      "name": "Legends: Arceus",
+      "sub": "save do Arceus",
+      "color": "#d08000",
+      "label": "ARC",
+      "oneway": false,
+      "dex": [
+        25,
+        26,
+        35,
+        36,
+        41,
+        42,
+        74,
+        75,
+        76,
+        77,
+        78,
+        81,
+        82,
+        86,
+        87,
+        92,
+        93,
+        94,
+        95,
+        100,
+        101,
+        108,
+        111,
+        112,
+        113,
+        114,
+        116,
+        117,
+        122,
+        123,
+        125,
+        126,
+        129,
+        130,
+        133,
+        134,
+        135,
+        136,
+        137,
+        143,
+        155,
+        156,
+        157,
+        169,
+        172,
+        173,
+        175,
+        176,
+        179,
+        180,
+        181,
+        185,
+        190,
+        193,
+        196,
+        197,
+        198,
+        200,
+        204,
+        205,
+        207,
+        208,
+        212,
+        215,
+        216,
+        217,
+        220,
+        221,
+        223,
+        224,
+        226,
+        230,
+        233,
+        234,
+        239,
+        240,
+        242,
+        246,
+        247,
+        248,
+        265,
+        266,
+        267,
+        268,
+        269,
+        280,
+        281,
+        282,
+        299,
+        315,
+        339,
+        340,
+        355,
+        356,
+        358,
+        361,
+        362,
+        363,
+        364,
+        365,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        501,
+        502,
+        503,
+        550,
+        570,
+        571,
+        582,
+        583,
+        584,
+        641,
+        642,
+        645,
+        700,
+        722,
+        723,
+        724
+      ]
+    },
+    {
+      "id": "za",
+      "name": "Legends: Z-A",
+      "sub": "PERMANENTE - nao volta",
+      "color": "#30a060",
+      "label": "Z-A",
+      "oneway": true,
+      "dex": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131,
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        211,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273,
+        274,
+        275,
+        276,
+        277,
+        278,
+        279,
+        280,
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        497,
+        498,
+        499,
+        500,
+        501,
+        502,
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514,
+        515,
+        516,
+        517,
+        518,
+        519,
+        520,
+        521,
+        522,
+        523,
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535,
+        536,
+        537,
+        538,
+        539,
+        540,
+        541,
+        542,
+        543,
+        544,
+        545,
+        546,
+        547,
+        548,
+        549,
+        550,
+        551,
+        552,
+        553,
+        554,
+        555,
+        556,
+        557,
+        558,
+        559,
+        560,
+        561,
+        562,
+        563,
+        564,
+        565,
+        566,
+        567,
+        568,
+        569,
+        570,
+        571,
+        572,
+        573,
+        574,
+        575,
+        576,
+        577,
+        578,
+        579,
+        580,
+        581,
+        582,
+        583,
+        584,
+        585,
+        586,
+        587,
+        588,
+        589,
+        590,
+        591,
+        592,
+        593,
+        594,
+        595,
+        596,
+        597,
+        598,
+        599,
+        600,
+        601,
+        602,
+        603,
+        604,
+        605,
+        606,
+        607,
+        608,
+        609,
+        610,
+        611,
+        612,
+        613,
+        614,
+        615,
+        616,
+        617,
+        618,
+        619,
+        620,
+        621,
+        622,
+        623,
+        624,
+        625,
+        626,
+        627,
+        628,
+        629,
+        630,
+        631,
+        632,
+        633,
+        634,
+        635,
+        636,
+        637,
+        638,
+        639,
+        640,
+        641,
+        642,
+        643,
+        644,
+        645,
+        646,
+        647,
+        648,
+        649,
+        650,
+        651,
+        652,
+        653,
+        654,
+        655,
+        656,
+        657,
+        658,
+        659,
+        660,
+        661,
+        662,
+        663,
+        664,
+        665,
+        666,
+        667,
+        668,
+        669,
+        670,
+        671,
+        672,
+        673,
+        674,
+        675,
+        676,
+        677,
+        678,
+        679,
+        680,
+        681,
+        682,
+        683,
+        684,
+        685,
+        686,
+        687,
+        688,
+        689,
+        690,
+        691,
+        692,
+        693,
+        694,
+        695,
+        696,
+        697,
+        698,
+        699,
+        700,
+        701,
+        702,
+        703,
+        704,
+        705,
+        706,
+        707,
+        708,
+        709,
+        710,
+        711,
+        712,
+        713,
+        714,
+        715,
+        716,
+        717,
+        718,
+        719,
+        720,
+        721
+      ]
+    }
+  ],
+  "chipIds": [
+    "go",
+    "bd",
+    "arceus",
+    "za"
+  ]
+}
