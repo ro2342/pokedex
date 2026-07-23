@@ -20,8 +20,18 @@ function activeSingleGame() {
   return null;
 }
 
+// Retorna { num, prefix } ou null. Z-A tem duas dexes: a principal
+// (Lumiose City) e a do Mega Dimension (DLC, numeracao propria) - se o
+// pokemon nao esta na principal mas esta na do DLC, mostra com prefixo
+// "MD" pra nao confundir os dois numeros.
 function regionalNumber(gid, pid) {
-  return REGIONAL_DEX[gid] && REGIONAL_DEX[gid][pid];
+  if (REGIONAL_DEX[gid] && REGIONAL_DEX[gid][pid] !== undefined) {
+    return { num: REGIONAL_DEX[gid][pid], prefix: '' };
+  }
+  if (gid === 'za' && REGIONAL_DEX.zaMega && REGIONAL_DEX.zaMega[pid] !== undefined) {
+    return { num: REGIONAL_DEX.zaMega[pid], prefix: 'MD' };
+  }
+  return null;
 }
 
 let toastTimer = null;
@@ -127,8 +137,8 @@ function render() {
     const ml = myLocs(p.id);
     const dotClr = ml.length === 0 ? '#e0d0e0' : ml.length > 1 ? '#d040a0' : (GAMES.find(g => g.id === ml[0].id)?.color || '#aaa');
 
-    const regionalNum = singleGame ? regionalNumber(singleGame, p.id) : null;
-    const numLabel = regionalNum ? '#' + String(regionalNum).padStart(3, '0') : '#' + String(p.id).padStart(4, '0');
+    const regional = singleGame ? regionalNumber(singleGame, p.id) : null;
+    const numLabel = regional ? regional.prefix + '#' + String(regional.num).padStart(3, '0') : '#' + String(p.id).padStart(4, '0');
     const onClick = singleGame ? `quickToggle(${p.id},'${singleGame}')` : `openModal(${p.id})`;
     const quickOn = singleGame ? has(p.id, singleGame) : false;
 

@@ -87,11 +87,19 @@ namespace PokedexUWP.Services
             return g.Dex.Contains(pokemonId);
         }
 
-        public static int? RegionalNumber(string gameId, int pokemonId)
+        // Z-A tem duas dexes: a principal (Lumiose City) e a do Mega
+        // Dimension (DLC, numeracao propria). Se o pokemon nao esta na
+        // principal mas esta na do DLC, devolve com prefixo "MD" pra nao
+        // confundir os dois numeros.
+        public static (int Num, string Prefix)? RegionalNumber(string gameId, int pokemonId)
         {
             if (RegionalDex.TryGetValue(gameId, out Dictionary<int, int> map) && map.TryGetValue(pokemonId, out int num))
             {
-                return num;
+                return (num, "");
+            }
+            if (gameId == "za" && RegionalDex.TryGetValue("zaMega", out Dictionary<int, int> megaMap) && megaMap.TryGetValue(pokemonId, out int megaNum))
+            {
+                return (megaNum, "MD");
             }
             return null;
         }

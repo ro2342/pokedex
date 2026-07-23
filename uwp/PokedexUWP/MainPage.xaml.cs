@@ -177,9 +177,9 @@ namespace PokedexUWP
                     .Where(gid => ContentStore.InDex(p.Id, gid))
                     .Select(gid => ContentStore.GameById(gid)?.Label ?? gid));
 
-                int? regionalNum = singleGame != null ? ContentStore.RegionalNumber(singleGame, p.Id) : null;
-                string numberLabel = regionalNum.HasValue
-                    ? "#" + regionalNum.Value.ToString("D3")
+                (int Num, string Prefix)? regional = singleGame != null ? ContentStore.RegionalNumber(singleGame, p.Id) : null;
+                string numberLabel = regional.HasValue
+                    ? regional.Value.Prefix + "#" + regional.Value.Num.ToString("D3")
                     : "#" + p.Id.ToString("D4");
 
                 _items.Add(new PokemonCardVm
