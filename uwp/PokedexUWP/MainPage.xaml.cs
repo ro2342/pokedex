@@ -306,5 +306,90 @@ namespace PokedexUWP
             Render();
             await new MessageDialog(status, "Sincronizacao").ShowAsync();
         }
+
+        // --- atualizacao (app sideloaded, sem Store - ver UpdateCheckService.cs) ---
+
+        private Windows.Storage.StorageFile _downloadedUpdateFile;
+
+        private async void UpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+            string installed = UpdateCheckService.GetInstalledVersion();
+            TextBlock statusText = new TextBlock { Text = $"Versao instalada: {installed}. Verificando...", TextWrapping = TextWrapping.Wrap };
+            ProgressBar progressBar = new ProgressBar { Minimum = 0, Maximum = 100, Value = 0, Visibility = Visibility.Collapsed, Margin = new Thickness(0, 8, 0, 0) };
+            Button downloadButton = new Button { Content = "Baixar atualizacao", Visibility = Visibility.Collapsed, Margin = new Thickness(0, 8, 0, 0) };
+            Button installButton = new Button { Content = "Instalar", Visibility = Visibility.Collapsed, Margin = new Thickness(0, 8, 0, 0) };
+
+            StackPanel body = new StackPanel { Padding = new Thickness(4) };
+            body.Children.Add(statusText);
+            body.Children.Add(progressBar);
+            body.Children.Add(downloadButton);
+            body.Children.Add(installButton);
+
+            downloadButton.Click += async (s, args) =>
+            {
+                downloadButton.IsEnabled = false;
+                progressBar.Value = 0;
+                progressBar.Visibility = Visibility.Visible;
+                statusText.Text = "Baixando atualizacao...";
+
+                Progress<double> progress = new Progress<double>(p => progressBar.Value = p);
+                Windows.Storage.StorageFile file;
+                try
+                {
+                    file = await UpdateCheckService.DownloadUpdateAsync(progress);
+                }
+                catch (Exception ex)
+                {
+                    progressBar.Visibility = Visibility.Collapsed;
+                    downloadButton.IsEnabled = true;
+                    statusText.Text = "Falha ao baixar: " + ex.Message;
+                    return;
+                }
+
+                progressBar.Visibility = Visibility.Collapsed;
+                downloadButton.IsEnabled = true;
+
+                if (file == null)
+                {
+                    statusText.Text = "Escolha uma pasta de download pra continuar.";
+                    return;
+                }
+
+                _downloadedUpdateFile = file;
+                downloadButton.Visibility = Visibility.Collapsed;
+                installButton.Visibility = Visibility.Visible;
+                statusText.Text = "Atualizacao baixada - toque em Instalar.";
+            };
+
+            installButton.Click += async (s, args) =>
+            {
+                if (_downloadedUpdateFile == null) return;
+                await Windows.System.Launcher.LaunchFileAsync(_downloadedUpdateFile);
+            };
+
+            ContentDialog dialog = new ContentDialog
+            {
+                Title = "Atualizacoes",
+                Content = body,
+                CloseButtonText = "Fechar",
+            };
+
+            UpdateCheckResult checkTask = null;
+            _ = dialog.ShowAsync();
+            checkTask = await UpdateCheckService.CheckAsync();
+            if (!checkTask.Success)
+            {
+                statusText.Text = $"Versao instalada: {installed}. Nao foi possivel checar agora ({checkTask.Error}).";
+            }
+            else if (checkTask.UpdateAvailable)
+            {
+                statusText.Text = $"Versao instalada: {installed}. Nova versao disponivel: {checkTask.Latest}.";
+                downloadButton.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                statusText.Text = $"Versao instalada: {installed}. Atualizado.";
+            }
+        }
     }
 }

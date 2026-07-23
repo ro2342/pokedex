@@ -68,6 +68,7 @@
     <Compile Include="Services\SessionService.cs" />
     <Compile Include="Services\AuthService.cs" />
     <Compile Include="Services\SyncService.cs" />
+    <Compile Include="Services\UpdateCheckService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">

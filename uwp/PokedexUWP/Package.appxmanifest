@@ -8,7 +8,7 @@
   <Identity
     Name="RodCarvalho.PokedexTracker"
     Publisher="CN=RodCarvalho-Pokedex-SelfSigned"
-    Version="1.0.0.0" />
+    Version="1.0.1.0" />
 
   <mp:PhoneIdentity PhoneProductId="7e5c2f3a-9d4b-4a6e-8c1d-2b7f5a9e6d02" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
 

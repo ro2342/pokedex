@@ -28,7 +28,10 @@
                 <TextBlock x:Name="StatsText" Text="- pokemon - 0 no HOME" Foreground="White" Opacity="0.85" FontSize="12" Margin="0,2,0,0"/>
                 <ProgressBar x:Name="HomeProgress" Minimum="0" Maximum="100" Value="0" Width="180" HorizontalAlignment="Left" Margin="0,4,0,0"/>
             </StackPanel>
-            <Button x:Name="SyncButton" Grid.Column="1" Content="Sync" Click="SyncButton_Click" VerticalAlignment="Center"/>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center">
+                <Button x:Name="UpdateButton" Content="Atualizacoes" Click="UpdateButton_Click" Margin="0,0,6,0"/>
+                <Button x:Name="SyncButton" Content="Sync" Click="SyncButton_Click"/>
+            </StackPanel>
         </Grid>
 
         <!-- Chips: filtro por pokedex oficial do jogo -->
