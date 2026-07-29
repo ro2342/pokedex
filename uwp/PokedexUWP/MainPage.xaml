@@ -41,7 +41,8 @@
                 <ToggleButton x:Name="ChipGo" Content="Pokemon GO" Click="Chip_Click" Tag="go" Margin="0,0,6,0"/>
                 <ToggleButton x:Name="ChipBd" Content="Brilliant Diamond" Click="Chip_Click" Tag="bd" Margin="0,0,6,0"/>
                 <ToggleButton x:Name="ChipArceus" Content="Legends: Arceus" Click="Chip_Click" Tag="arceus" Margin="0,0,6,0"/>
-                <ToggleButton x:Name="ChipZa" Content="Legends: Z-A" Click="Chip_Click" Tag="za"/>
+                <ToggleButton x:Name="ChipZa" Content="Legends: Z-A" Click="Chip_Click" Tag="za" Margin="0,0,6,0"/>
+                <ToggleButton x:Name="ChipPokopia" Content="Pokemon Pokopia" Click="Chip_Click" Tag="pokopia"/>
             </StackPanel>
         </ScrollViewer>
 
@@ -54,6 +55,7 @@
                 <ToggleButton x:Name="TabArceus" Content="MEU ARCEUS" Click="Tab_Click" Tag="arceus" Margin="0,0,4,0"/>
                 <ToggleButton x:Name="TabZa" Content="MEU Z-A" Click="Tab_Click" Tag="za" Margin="0,0,4,0"/>
                 <ToggleButton x:Name="TabGo" Content="MEU GO" Click="Tab_Click" Tag="go" Margin="0,0,4,0"/>
+                <ToggleButton x:Name="TabPokopia" Content="MEU POKOPIA" Click="Tab_Click" Tag="pokopia" Margin="0,0,4,0"/>
                 <ToggleButton x:Name="TabNo" Content="NAO RASTR." Click="Tab_Click" Tag="no"/>
             </StackPanel>
         </ScrollViewer>

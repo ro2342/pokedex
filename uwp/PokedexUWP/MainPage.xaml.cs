@@ -32,6 +32,7 @@ namespace PokedexUWP
             ["home"] = Color.FromArgb(255, 0xD0, 0x40, 0xA0),
             ["arceus"] = Color.FromArgb(255, 0xD0, 0x80, 0x00),
             ["za"] = Color.FromArgb(255, 0x30, 0xA0, 0x60),
+            ["pokopia"] = Color.FromArgb(255, 0x20, 0xA0, 0xA0),
         };
 
         public MainPage()
@@ -154,6 +155,9 @@ namespace PokedexUWP
             });
 
             string singleGame = ActiveSingleGame();
+            list = singleGame != null
+                ? list.OrderBy(p => ContentStore.RegionalSortKey(singleGame, p.Id))
+                : list.OrderBy(p => p.Id);
 
             _items.Clear();
             foreach (PokemonInfo p in list)

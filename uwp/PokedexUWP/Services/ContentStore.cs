@@ -104,5 +104,22 @@ namespace PokedexUWP.Services
             }
             return null;
         }
+
+        // Sort key for a single-game view: the game's own dex order (Mega
+        // Dimension entries sort after every Lumiose City entry, same as
+        // pokemondb splits them into two pages). Games without a regional
+        // dex (GO) fall back to National Dex order, which is what they use.
+        public static int RegionalSortKey(string gameId, int pokemonId)
+        {
+            if (RegionalDex.TryGetValue(gameId, out Dictionary<int, int> map) && map.TryGetValue(pokemonId, out int num))
+            {
+                return num;
+            }
+            if (gameId == "za" && RegionalDex.TryGetValue("zaMega", out Dictionary<int, int> megaMap) && megaMap.TryGetValue(pokemonId, out int megaNum))
+            {
+                return 100000 + megaNum;
+            }
+            return 200000 + pokemonId;
+        }
     }
 }

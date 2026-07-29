@@ -1,6 +1,6 @@
 :root{
   --cream:#fef9f0;--dark:#2a1a3a;--border:#c8a0c8;
-  --c-go:#a8b800;--c-bd:#4070e0;--c-arceus:#d08000;--c-za:#30a060;--c-home:#d040a0;
+  --c-go:#a8b800;--c-bd:#4070e0;--c-arceus:#d08000;--c-za:#30a060;--c-home:#d040a0;--c-pokopia:#20a0a0;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Nunito',sans-serif;background:#fce8f4;background-image:linear-gradient(rgba(200,150,220,.13) 1px,transparent 1px),linear-gradient(90deg,rgba(200,150,220,.13) 1px,transparent 1px);background-size:28px 28px;min-height:100vh;color:var(--dark);padding-bottom:60px}

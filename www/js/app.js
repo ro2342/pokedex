@@ -34,6 +34,16 @@ function regionalNumber(gid, pid) {
   return null;
 }
 
+// Sort key for a single-game view: the game's own dex order (Mega
+// Dimension entries sort after every Lumiose City entry, same as
+// pokemondb splits them into two pages). Games without a regional dex
+// (GO) fall back to National Dex order, which is what they use anyway.
+function regionalSortKey(gid, pid) {
+  const r = regionalNumber(gid, pid);
+  if (r) return (r.prefix ? 100000 : 0) + r.num;
+  return 200000 + pid;
+}
+
 let toastTimer = null;
 function showToast(msg) {
   const el = document.getElementById('toast');
@@ -76,7 +86,7 @@ function setTab(t) {
 function updateLabel() {
   const el = document.getElementById('slbl');
   if (myTab !== 'all') {
-    const map = { bd: 'MEU BRILLIANT DIAMOND', home: 'MEU POKEMON HOME', arceus: 'MEU LEGENDS: ARCEUS', za: 'MEU LEGENDS: Z-A', go: 'MEU POKEMON GO', no: 'NAO RASTREADOS' };
+    const map = { bd: 'MEU BRILLIANT DIAMOND', home: 'MEU POKEMON HOME', arceus: 'MEU LEGENDS: ARCEUS', za: 'MEU LEGENDS: Z-A', go: 'MEU POKEMON GO', pokopia: 'MEU POKEMON POKOPIA', no: 'NAO RASTREADOS' };
     el.textContent = map[myTab] || myTab.toUpperCase(); return;
   }
   if (activeChips.size === 0) { el.textContent = 'TODOS OS POKEMON'; return; }
@@ -126,6 +136,9 @@ function render() {
   empty.style.display = 'none';
 
   const singleGame = activeSingleGame();
+  list.sort((a, b) => singleGame
+    ? regionalSortKey(singleGame, a.id) - regionalSortKey(singleGame, b.id)
+    : a.id - b.id);
 
   grid.innerHTML = list.map(p => {
     const availGames = CHIP_IDS.filter(gid => inDex(p.id, gid));
